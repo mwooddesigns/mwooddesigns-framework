@@ -9,15 +9,8 @@
 .row {
   width: 100%;
   display: block;
-  &:after,
-  &:before {
-    content: " ";
-    /* Older browser do not support empty content */
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-  }
+  box-sizing: border-box;
+  @include clearfix;
 }
 [class*="col-"] {
   clear: both;
@@ -36,7 +29,7 @@
     width: 8.33333%;
   }
   .col-xs-2 {
-    width: 16.666667;
+    width: 16.666667%;
   }
   .col-xs-3 {
     width: 25%;
@@ -78,7 +71,7 @@
     width: 8.33333%;
   }
   .col-sm-2 {
-    width: 16.666667;
+    width: 16.666667%;
   }
   .col-sm-3 {
     width: 25%;
@@ -120,7 +113,7 @@
     width: 8.33333%;
   }
   .col-md-2 {
-    width: 16.666667;
+    width: 16.666667%;
   }
   .col-md-3 {
     width: 25%;
@@ -162,7 +155,7 @@
     width: 8.33333%;
   }
   .col-lg-2 {
-    width: 16.666667;
+    width: 16.666667%;
   }
   .col-lg-3 {
     width: 25%;
