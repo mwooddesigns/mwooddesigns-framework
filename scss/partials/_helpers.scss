@@ -24,8 +24,6 @@
 }
 .img-responsive {
   max-width: 100%;
-  display: block;
-  margin: 0 auto;
 }
 .bold {
   font-weight: bold;
@@ -58,7 +56,12 @@
 textarea.form-control {
   height: auto;
 }
-
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 @media(max-width: 767px) {
   .desktop {
     display: none;
