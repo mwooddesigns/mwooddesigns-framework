@@ -1,0 +1,30 @@
+@media(min-width: 768px) {
+   @for $i from 1 through 12{
+    .col-sm-push-#{$i} {
+      left: ($i/12) * 100 + %;
+    }
+    .col-sm-pull-#{$i} {
+      right: ($i/12) * 100 + %;
+    }
+  }
+}
+@media(min-width: 992px) {
+   @for $i from 1 through 12{
+    .col-md-push-#{$i} {
+      left: ($i/12) * 100 + %;
+    }
+    .col-md-pull-#{$i} {
+      right: ($i/12) * 100 + %;
+    }
+  }
+}
+@media(min-width: 1200px) {
+   @for $i from 1 through 12{
+    .col-lg-push-#{$i} {
+      left: ($i/12) * 100 + %;
+    }
+    .col-lg-pull-#{$i} {
+      right: ($i/12) * 100 + %;
+    }
+  }
+}
