@@ -1,7 +1,7 @@
 {
   "name": "mwooddesigns-framework",
   "version": "1.0.0",
-  "description": "A customize-able bootstrap-like CSS/JS boilerplate framework made for my own personal projects.",
+  "description": "A customize-able bootstrap-like CSS/JS boilerplate framework made for my own personal projects. Only CSS for now, built with SCSS.",
   "main": "index.js",
   "directories": {
     "test": "tests"
