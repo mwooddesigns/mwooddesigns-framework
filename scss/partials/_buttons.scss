@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $btnColor;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}

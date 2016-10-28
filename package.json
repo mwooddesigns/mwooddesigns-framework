@@ -1,0 +1,22 @@
+{
+  "name": "mwooddesigns-framework",
+  "version": "1.0.0",
+  "description": "A customize-able bootstrap-like CSS/JS boilerplate framework made for my own personal projects.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwooddesigns/mwooddesigns-framework.git"
+  },
+  "author": "Michael Wood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mwooddesigns/mwooddesigns-framework/issues"
+  },
+  "homepage": "https://github.com/mwooddesigns/mwooddesigns-framework#readme"
+}
