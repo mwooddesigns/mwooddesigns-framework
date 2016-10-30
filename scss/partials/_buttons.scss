@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   background-color: $btnColor;
   max-width: 350px;
@@ -12,4 +12,232 @@
   color: #fff;
   position: relative;
   overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: $btnBorderRad;
+  transition: 0.5s all;
+  &:active,
+  &:focus,
+  &:visited {
+    color: #fff;
+  }
+  &:after,
+  &:before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    background-color: $btnOverlay;
+  }
+}
+.default {
+  &:hover {
+    background-color: lighten($btnColor, 15%);
+  }
+}
+.btn-outline {
+  @extend .btn;
+  background-color: transparent;
+  border-color: $btnColor;
+  color: $btnColor;
+  &:hover {
+    color: #fff;
+    background-color: $btnColor;
+  }
+}
+.btn-hover-outline {
+  @extend .btn;
+  &:hover {
+    border-color: $btnColor;
+    background-color: transparent;
+    color: $btnColor;
+  }
+}
+.btn-overlay-left {
+  @extend .btn;
+  border: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover:before {
+    right: 0;
+  }
+}
+.btn-overlay-right {
+  @extend .btn;
+  border: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover:before {
+    left: 0;
+  }
+}
+.btn-overlay-top {
+  @extend .btn;
+  border: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover:before {
+    top: 0;
+  }
+}
+.btn-overlay-bottom {
+  @extend .btn;
+  border: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover:before {
+    top: 0;
+  }
+}
+.btn-slant-left {
+  @extend .btn;
+  border: none;
+  &:before {
+    top: -200%;
+    right: 90%;
+    width: 100%;
+    height: 300px;
+    transform: rotate(30deg);
+  }
+  &:hover:before {
+    right: 20%;
+  }
+}
+.btn-slant-right {
+  @extend .btn;
+  border: none;
+  &:before {
+    top: -200%;
+    left: 90%;
+    width: 100%;
+    height: 300px;
+    transform: rotate(-30deg);
+  }
+  &:hover:before {
+    left: 20%;
+  }
+}
+.btn-shutter-close {
+  @extend .btn;
+  border: none;
+  &:before {
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  &:after {
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  &:hover:before {
+    bottom: 50%;
+  }
+  &:hover:after {
+    top: 50%;
+  }
+}
+.btn-shutter-open {
+  @extend .btn;
+  border: none;
+  &:before {
+    height: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  &:hover:before {
+    height: 110%;
+  }
+}
+.btn-curtain-close {
+  @extend .btn;
+  border: none;
+  &:before {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 100%;
+  }
+  &:after {
+    height: 100%;
+    widtH: 100%;
+    top: 0;
+    left: 100%;
+  }
+  &:hover:before {
+    right: 50%;
+  }
+  &:hover:after {
+    left: 50%;
+  }
+}
+.btn-curtain-open {
+  @extend .btn;
+  border: none;
+  &:before {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+.btn-tunnel-open {
+  @extend .btn;
+  border: none;
+  &:before {
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover:before {
+    height: 100%;
+    width: 100%;
+  }
+}
+.btn-tunnel-close {
+  @extend .btn;
+  border: none;
+  box-shadow: inset 0 0 0 0 $btnOverlay;
+  transition: box-shadow 0.5s;
+  &:hover {
+    box-shadow: inset 0 0 0 100px $btnOverlay;
+  }
 }
