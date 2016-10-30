@@ -1,0 +1,14 @@
+{
+  "name": "mwooddesigns-framework",
+  "description": "A customize-able bootstrap-like CSS/JS boilerplate framework made for my own personal projects. Only CSS for now, built with SCSS.",
+  "main": "index.js",
+  "authors": [
+    "Michael Wood"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mwooddesigns/mwooddesigns-framework",
+  "private": true,
+  "dependencies": {
+    "vue": "^2.0.3"
+  }
+}
