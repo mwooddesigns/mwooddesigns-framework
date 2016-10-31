@@ -7513,3 +7513,9 @@ Vue$3.compile = compileToFunctions;
 return Vue$3;
 
 })));
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})

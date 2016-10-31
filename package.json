@@ -9,7 +9,7 @@
   "scripts": {
     "scss": "node-sass -r src/scss/master.scss dist/css/master.css",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
-    "lint": "eslint src/js",
+    "lint": "eslint src/js/*.js",
     "concatJs": "node build-scripts/concatJS.js",
     "uglify": "uglifyjs dist/js/master.js -m -c -o dist/js/master.min.js",
     "cssTasks": "npm run scss && cssmin dist/css/master.css > dist/css/master.min.css",
