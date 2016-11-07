@@ -15,6 +15,7 @@
   border: 2px solid transparent;
   border-radius: $btnBorderRad;
   transition: 0.5s all;
+  white-space: normal;
   &:active,
   &:focus,
   &:visited {
