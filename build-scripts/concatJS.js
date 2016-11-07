@@ -1,6 +1,7 @@
 var concat = require('concat-files');
 
 concat([
+	'./dependencies/velocity/velocity.js',
 	'./dependencies/vue/dist/vue.js',
 	'./src/js/test.js'
 ], 'dist/js/master.js', function() {
