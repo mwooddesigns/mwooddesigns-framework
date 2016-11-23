@@ -28,6 +28,7 @@
   "homepage": "https://github.com/mwooddesigns/mwooddesigns-framework#readme",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
+    "buildify": "^0.4.0",
     "concat-files": "^0.1.0",
     "cssmin": "^0.4.3",
     "node-sass": "^3.10.1",
