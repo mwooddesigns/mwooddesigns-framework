@@ -9,7 +9,7 @@
   font-weight: 700;
   font-size: 25px;
   text-decoration: none;
-  color: #fff;
+  color: $btnTextColor;
   position: relative;
   overflow: hidden;
   border: 2px solid transparent;
@@ -19,7 +19,7 @@
   &:active,
   &:focus,
   &:visited {
-    color: #fff;
+    color: $btnTextColor;
   }
   &:after,
   &:before {
@@ -42,7 +42,7 @@
   border-color: $btnColor;
   color: $btnColor;
   &:hover {
-    color: #fff;
+    color: $btnTextColor;
     background-color: $btnColor;
   }
 }
@@ -58,7 +58,7 @@
   @extend .btn;
   border: none;
   &:hover {
-    color: #fff;
+    color: $btnTextColor;
   }
   &:before {
     top: 0;
@@ -74,7 +74,7 @@
   @extend .btn;
   border: none;
   &:hover {
-    color: #fff;
+    color: $btnTextColor;
   }
   &:before {
     top: 0;
@@ -90,7 +90,7 @@
   @extend .btn;
   border: none;
   &:hover {
-    color: #fff;
+    color: $btnTextColor;
   }
   &:before {
     top: -100%;
@@ -106,7 +106,7 @@
   @extend .btn;
   border: none;
   &:hover {
-    color: #fff;
+    color: $btnTextColor;
   }
   &:before {
     top: 100%;

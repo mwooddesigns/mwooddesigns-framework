@@ -410,6 +410,13 @@ template {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+  .container:after, .container:before {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
 
 .row {
   width: 100%;
@@ -431,6 +438,13 @@ template {
   padding: 0 10px;
   min-height: 1px;
   position: relative; }
+  [class*="col-"]:after, [class*="col-"]:before {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
 
 @media (max-width: 767px) {
   [class*="col-xs"] {
