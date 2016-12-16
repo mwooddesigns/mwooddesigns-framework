@@ -3,8 +3,8 @@ var buildify = require('buildify');
 
 var env = "development";
 
-var prodDependencies = ['./dependencies/velocity/velocity.min.js', './dependencies/vue/dist/vue.min.js'];
-var devDependencies = ['./dependencies/velocity/velocity.js', './dependencies/vue/dist/vue.js'];
+var prodDependencies = ['./dependencies/vue/dist/vue.min.js'];
+var devDependencies = ['./dependencies/vue/dist/vue.js'];
 var srcFiles = ['./src/js/test.js'];
 
 switch (env) {
