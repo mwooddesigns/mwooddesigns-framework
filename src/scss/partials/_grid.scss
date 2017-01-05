@@ -24,45 +24,45 @@
   @include clearfix;
 }
 @media(max-width: 767px) {
-  [class*="col-xs"] {
+  [class*="col-tiny"] {
     float: left;
     clear: none;
   }
   @for $i from 1 through $gridCols {
-    .col-xs-#{$i} {
+    .col-tiny-#{$i} {
       width: ($i/$gridCols) * 100 + %;
     }
   }
 }
 @media(min-width: 768px) {
-  [class*="col-sm"] {
+  [class*="col-small"] {
     float: left;
     clear: none;
   }
   @for $i from 1 through $gridCols {
-    .col-sm-#{$i} {
+    .col-small-#{$i} {
       width: ($i/$gridCols) * 100 + %;
     }
   }
 }
 @media(min-width: 992px) {
-  [class*="col-md"] {
+  [class*="col-med"] {
     float: left;
     clear: none;
   }
   @for $i from 1 through $gridCols {
-    .col-md-#{$i} {
+    .col-med-#{$i} {
       width: ($i/$gridCols) * 100 + %;
     }
   }
 }
 @media(min-width: 1200px) {
-  [class*="col-lg"] {
+  [class*="col-large"] {
     float: left;
     clear: none;
   }
   @for $i from 1 through $gridCols {
-    .col-lg-#{$i} {
+    .col-large-#{$i} {
       width: ($i/$gridCols) * 100 + %;
     }
   }
