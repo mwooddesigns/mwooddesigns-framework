@@ -1,29 +1,29 @@
 @media(min-width: 768px) {
    @for $i from 1 through 12{
-    .col-small-push-#{$i} {
+    .col-s-push-#{$i} {
       left: ($i/12) * 100 + %;
     }
-    .col-small-pull-#{$i} {
+    .col-s-pull-#{$i} {
       right: ($i/12) * 100 + %;
     }
   }
 }
 @media(min-width: 992px) {
    @for $i from 1 through 12{
-    .col-med-push-#{$i} {
+    .col-m-push-#{$i} {
       left: ($i/12) * 100 + %;
     }
-    .col-med-pull-#{$i} {
+    .col-m-pull-#{$i} {
       right: ($i/12) * 100 + %;
     }
   }
 }
 @media(min-width: 1200px) {
    @for $i from 1 through 12{
-    .col-large-push-#{$i} {
+    .col-l-push-#{$i} {
       left: ($i/12) * 100 + %;
     }
-    .col-large-pull-#{$i} {
+    .col-l-pull-#{$i} {
       right: ($i/12) * 100 + %;
     }
   }
