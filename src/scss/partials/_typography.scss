@@ -59,10 +59,14 @@ hr {
 }
 pre {
     font-size: 1em;
-    width: 500px;
+    width: 100%;
+    border: 1px solid $accentColor;
+    border-left: 10px solid $accentColor;
     white-space: pre-wrap;
     word-wrap: break-word;
     display: block;
     margin: 10px auto;
-    line-height: 1.2em;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    padding: 10px;
 }

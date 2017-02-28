@@ -2,7 +2,7 @@
   display: block;
   margin: 20px auto;
   text-align: center;
-  background-color: $btnColor;
+  background-color: $accentColor;
   max-width: 300px;
   box-sizing: border-box;
   padding: 10px;
@@ -33,25 +33,25 @@
 }
 .default {
   &:hover {
-    background-color: lighten($btnColor, 15%);
+    background-color: lighten($accentColor, 15%);
   }
 }
 .btn-outline {
   @extend .btn;
   background-color: transparent;
-  border-color: $btnColor;
-  color: $btnColor;
+  border-color: $accentColor;
+  color: $accentColor;
   &:hover {
     color: $btnTextColor;
-    background-color: $btnColor;
+    background-color: $accentColor;
   }
 }
 .btn-hover-outline {
   @extend .btn;
   &:hover {
-    border-color: $btnColor;
+    border-color: $accentColor;
     background-color: transparent;
-    color: $btnColor;
+    color: $accentColor;
   }
 }
 .btn-overlay-left {

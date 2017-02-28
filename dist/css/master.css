@@ -401,6 +401,7 @@ template {
 [hidden] {
   display: none; }
 
+/* COLORS */
 /* GRID SETTINGS */
 /* BUTTON SETTINGS */
 .container {
@@ -846,12 +847,16 @@ hr {
 
 pre {
   font-size: 1em;
-  width: 500px;
+  width: 100%;
+  border: 1px solid #673AB7;
+  border-left: 10px solid #673AB7;
   white-space: pre-wrap;
   word-wrap: break-word;
   display: block;
   margin: 10px auto;
-  line-height: 1.2em; }
+  line-height: 1.5em;
+  box-sizing: border-box;
+  padding: 10px; }
 
 table {
   width: 100%; }
