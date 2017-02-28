@@ -844,6 +844,15 @@ hr {
   blockquote {
     font-size: 1.25em; } }
 
+pre {
+  font-size: 1em;
+  width: 500px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  margin: 10px auto;
+  line-height: 1.2em; }
+
 table {
   width: 100%; }
 
